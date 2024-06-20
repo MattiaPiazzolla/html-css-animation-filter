@@ -96,3 +96,18 @@
     }
 }
 
+/* ESERCIZIO 11 */
+.ex-11-icon:hover{
+    animation:  1.5s ease-in-out infinite spin-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes spin-in-out {
+    0% , 100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(270deg);
+    }
+}
+
