@@ -84,14 +84,11 @@
 
 /* ESERCIZIO 10 */
 .ex-10-icon{
-    animation:  1.5s ease-in-out 0s infinite spin;
+    animation:  1.5s linear 0s infinite spin;
 }
 
 @keyframes spin {
     0%{
-        transform: rotate(0deg);
-    }
-    100%{
         transform: rotate(360deg);
     }
 }
@@ -182,7 +179,7 @@
 }
 
 @keyframes block-move-bottom-13 {
-    0% , 100%{
+    0% {
         left: 20%;
         bottom: -10px;
     }
@@ -200,8 +197,12 @@
         bottom: 60px;
     }
     90% {
-        left: 90%;
+        left: 100%;
+        bottom: -10px;
+    }
+
+    100%{
+        left: 20%;
         bottom: -10px;
     }
 }
-
